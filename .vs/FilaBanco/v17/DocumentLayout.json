@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Tecnico\\source\\repos\\FilaBanco\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{821906FF-6EE0-4E1A-BD22-FCC0A666B0B8}|FilaBanco.csproj|c:\\users\\tecnico\\source\\repos\\filabanco\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{821906FF-6EE0-4E1A-BD22-FCC0A666B0B8}|FilaBanco.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{821906FF-6EE0-4E1A-BD22-FCC0A666B0B8}|FilaBanco.csproj|c:\\users\\tecnico\\source\\repos\\filabanco\\fila.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{821906FF-6EE0-4E1A-BD22-FCC0A666B0B8}|FilaBanco.csproj|solutionrelative:fila.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{821906FF-6EE0-4E1A-BD22-FCC0A666B0B8}|FilaBanco.csproj|c:\\users\\tecnico\\source\\repos\\filabanco\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{821906FF-6EE0-4E1A-BD22-FCC0A666B0B8}|FilaBanco.csproj|solutionrelative:cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Fila.cs",
+              "DocumentMoniker": "C:\\Users\\Tecnico\\source\\repos\\FilaBanco\\Fila.cs",
+              "RelativeDocumentMoniker": "Fila.cs",
+              "ToolTip": "C:\\Users\\Tecnico\\source\\repos\\FilaBanco\\Fila.cs",
+              "RelativeToolTip": "Fila.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T22:54:01.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\Tecnico\\source\\repos\\FilaBanco\\Cliente.cs",
+              "RelativeDocumentMoniker": "Cliente.cs",
+              "ToolTip": "C:\\Users\\Tecnico\\source\\repos\\FilaBanco\\Cliente.cs",
+              "RelativeToolTip": "Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T22:53:25.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tecnico\\source\\repos\\FilaBanco\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Tecnico\\source\\repos\\FilaBanco\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T22:52:00.196Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
