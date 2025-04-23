@@ -8,16 +8,19 @@ namespace FilaBanco
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
             string Op = "";
             while (Op != "q")
-            {
-                Console.WriteLine("teste, [Digite q se quiser sair]");
-                Op = Console.ReadLine();
-                Console.WriteLine("teste 2 ");
+            {   
+                
+                Console.WriteLine("Quer continuar o programa? [s/q]");
                 Op = Console.ReadLine();
 
+                
+
+                
             }
 
 
