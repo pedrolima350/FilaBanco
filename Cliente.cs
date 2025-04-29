@@ -9,6 +9,23 @@ namespace FilaBanco
 {
     internal class Cliente
     {
-        public string nome;
+
+        public int ID { get; set; }
+        public string Nome { get; set; }
+        public int Idade { get; set; }
+       
+
+
+        public void Cadastrar()
+        {
+            Console.WriteLine("Digite o nome");
+            Nome = Console.ReadLine();
+            Console.WriteLine("Digite sua idade");
+            Idade = int.Parse(Console.ReadLine());
+
+        }
+
+
+
     }
 }

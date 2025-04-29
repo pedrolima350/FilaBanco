@@ -13,6 +13,23 @@ namespace FilaBanco
 
 
 
+        public void cadastrarFila(string nome, int idade, int i)
+        {
+           if (i > 10 || i < 1)
+            {
+                fila[i].Nome = nome;
+                fila[i].Idade = idade;
+            }
+            else
+            {
+                Console.WriteLine("Inválido");
+            }
+           
+            
+        }
+
+
+
         public void opcoes()
         {
             Console.WriteLine("[a] Atender próximo Cliente");
@@ -32,7 +49,7 @@ namespace FilaBanco
 
                 break;
                 case "c":
-
+                    
                 break;
                 case "q":
 

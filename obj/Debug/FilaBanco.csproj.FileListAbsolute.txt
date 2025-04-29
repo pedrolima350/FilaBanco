@@ -5,3 +5,10 @@ C:\Users\Tecnico\source\repos\FilaBanco\obj\Debug\FilaBanco.csproj.AssemblyRefer
 C:\Users\Tecnico\source\repos\FilaBanco\obj\Debug\FilaBanco.csproj.CoreCompileInputs.cache
 C:\Users\Tecnico\source\repos\FilaBanco\obj\Debug\FilaBanco.exe
 C:\Users\Tecnico\source\repos\FilaBanco\obj\Debug\FilaBanco.pdb
+C:\Users\Morning_Coffee\Desktop\code\FilaBanco\obj\Debug\FilaBanco.csproj.AssemblyReference.cache
+C:\Users\Morning_Coffee\Desktop\code\FilaBanco\obj\Debug\FilaBanco.csproj.CoreCompileInputs.cache
+C:\Users\Morning_Coffee\Desktop\code\FilaBanco\obj\Debug\FilaBanco.exe
+C:\Users\Morning_Coffee\Desktop\code\FilaBanco\obj\Debug\FilaBanco.pdb
+C:\Users\Morning_Coffee\Desktop\code\FilaBanco\bin\Debug\FilaBanco.exe.config
+C:\Users\Morning_Coffee\Desktop\code\FilaBanco\bin\Debug\FilaBanco.exe
+C:\Users\Morning_Coffee\Desktop\code\FilaBanco\bin\Debug\FilaBanco.pdb

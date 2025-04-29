@@ -11,17 +11,25 @@ namespace FilaBanco
 
         static void Main(string[] args)
         {
+
+
             string Op = "";
-            while (Op != "q")
-            {   
+
+            do {
+                
+
+                Console.WriteLine("==========FILA=========");
+                
+                
+                
+                
                 
                 Console.WriteLine("Quer continuar o programa? [s/q]");
                 Op = Console.ReadLine();
 
-                
 
-                
-            }
+
+            }while (Op != "q");
 
 
         }
