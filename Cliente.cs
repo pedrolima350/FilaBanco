@@ -13,6 +13,7 @@ namespace FilaBanco
         public int ID { get; set; }
         public string Nome { get; set; }
         public int Idade { get; set; }
+        public string Prioridade { get; set; } 
        
 
 
@@ -20,6 +21,7 @@ namespace FilaBanco
         {
             Console.WriteLine("Digite o nome");
             Nome = Console.ReadLine();
+            Nome = Nome.ToUpper();
             Console.WriteLine("Digite sua idade");
             Idade = int.Parse(Console.ReadLine());
 

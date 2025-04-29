@@ -9,57 +9,52 @@ namespace FilaBanco
     internal class Fila
     {
         public Cliente[] fila = new Cliente[10];
-        public string Op;
+        public int qtd = 0;
 
 
 
-        public void cadastrarFila(string nome, int idade, int i)
+        public void adicionarFila()
         {
-           if (i > 10 || i < 1)
+           if (qtd < 10 || qtd > 0)
             {
-                fila[i].Nome = nome;
-                fila[i].Idade = idade;
-            }
-            else
-            {
+                Cliente paciente = new Cliente();
+                paciente.Cadastrar();
+                fila[qtd] = paciente;
+
+            } else if (qtd > 10) {
+                Console.WriteLine("Fila Cheia");
+
+            } else {
                 Console.WriteLine("Inválido");
             }
-           
+
+            qtd++;
             
         }
 
-
-
-        public void opcoes()
+        public void Listar()
         {
-            Console.WriteLine("[a] Atender próximo Cliente");
-            Console.WriteLine("[l] Listar Fila");
-            Console.WriteLine("[q] Sair");
-            Console.WriteLine("[c] Cadastrar");
-            Op = Console.ReadLine();
-
-            switch (Op)
+            Console.WriteLine("\nFILA DE ATENDIMENTO:");
+            for (int i = 0; i < qtd; i++)
             {
+                Cliente pacienteAtual = fila[i];
 
-                
-                case "a":
+                if(pacienteAtual.Idade >= 60)
+                {
+                    pacienteAtual.Prioridade = "Sim";
+                }
+                else
+                {
+                    pacienteAtual.Prioridade = "Não";
+                }
 
-                break;
-                case "l":
-
-                break;
-                case "c":
-                    
-                break;
-                case "q":
-
-                break;
-
+                    Console.WriteLine("{0}, {1} | Prioritário: {2}", pacienteAtual.Nome, pacienteAtual.Idade, pacienteAtual.Prioridade);
             }
 
-
-
         }
+
+
+     
 
 
 

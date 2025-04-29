@@ -12,24 +12,45 @@ namespace FilaBanco
         static void Main(string[] args)
         {
 
-
+            Fila fila = new Fila();
             string Op = "";
+
+            fila.adicionarFila();
 
             do {
                 
 
                 Console.WriteLine("==========FILA=========");
-                
-                
-                
-                
-                
-                Console.WriteLine("Quer continuar o programa? [s/q]");
+                fila.Listar();
+
+                Console.WriteLine("[a] Atender próximo Cliente");
+                Console.WriteLine("[l] Listar Fila");
+                Console.WriteLine("[q] Sair");
+                Console.WriteLine("[c] Cadastrar");
                 Op = Console.ReadLine();
+                Op = Op.ToUpper();
+                switch (Op)
+                {
+
+                    case "A":
+
+                        break;
+                    case "L":
+                        fila.Listar();
+                        break;
+                    case "C":
+                       fila.adicionarFila();
+                        break;
+                    case "Q":
+                        Console.WriteLine("Fim da Execução");
+                        break;
+                    default:
+                        Console.WriteLine("Opção não existe");
+                        break;
+                }
 
 
-
-            }while (Op != "q");
+            }while (Op != "Q");
 
 
         }
