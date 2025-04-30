@@ -10,10 +10,9 @@ namespace FilaBanco
     internal class Cliente
     {
 
-        public int ID { get; set; }
         public string Nome { get; set; }
         public int Idade { get; set; }
-        public string Prioridade { get; set; } 
+        public bool Prioridade { get; set; } 
        
 
 
@@ -24,6 +23,13 @@ namespace FilaBanco
             Nome = Nome.ToUpper();
             Console.WriteLine("Digite sua idade");
             Idade = int.Parse(Console.ReadLine());
+
+            if (Idade >= 60)
+            {
+                Prioridade = true;
+            } else {
+                Prioridade = false;
+            }
 
         }
 

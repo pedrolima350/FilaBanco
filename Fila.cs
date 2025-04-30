@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,23 +13,42 @@ namespace FilaBanco
         public int qtd = 0;
 
 
+        public void Atender()
+        {
+            Cliente atendido = fila[0];
+            Console.WriteLine("Atendendo: {0}", atendido.Nome);
+
+            for (int i = 0; i < qtd - 1; i++)
+            {
+                fila[i] = fila[i + 1];
+            }
+
+            fila[qtd - 1] = null;
+            qtd--;
+        }
+
 
         public void adicionarFila()
         {
-           if (qtd < 10 || qtd > 0)
-            {
+
                 Cliente paciente = new Cliente();
                 paciente.Cadastrar();
-                fila[qtd] = paciente;
 
-            } else if (qtd > 10) {
-                Console.WriteLine("Fila Cheia");
+                if(paciente.Prioridade) {
+                    for (int i = qtd; i > 0; i--)
+                    {
+                        fila[i] = fila[i - 1];
+                    }
+                    fila[0] = paciente;
+                    Console.WriteLine("Cadastrado como Prioridade");
 
-            } else {
-                Console.WriteLine("Inválido");
-            }
+                } else {
 
-            qtd++;
+                    fila[qtd] = paciente;
+                    Console.WriteLine("Cadastrado");
+                }
+
+                qtd++;
             
         }
 
@@ -41,14 +61,22 @@ namespace FilaBanco
 
                 if(pacienteAtual.Idade >= 60)
                 {
-                    pacienteAtual.Prioridade = "Sim";
+                    pacienteAtual.Prioridade = true;
                 }
                 else
                 {
-                    pacienteAtual.Prioridade = "Não";
+                    pacienteAtual.Prioridade = false;
+                }
+                if(pacienteAtual.Prioridade)
+                {
+                    Console.WriteLine("{0}, {1} | Prioritário: Sim", pacienteAtual.Nome, pacienteAtual.Idade);
+                } else
+                {
+                    Console.WriteLine("{0}, {1} | Prioritário: Não", pacienteAtual.Nome, pacienteAtual.Idade);
                 }
 
-                    Console.WriteLine("{0}, {1} | Prioritário: {2}", pacienteAtual.Nome, pacienteAtual.Idade, pacienteAtual.Prioridade);
+
+                    
             }
 
         }
