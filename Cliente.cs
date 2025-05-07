@@ -11,25 +11,54 @@ namespace FilaBanco
     {
 
         public string Nome { get; set; }
-        public int Idade { get; set; }
-        public bool Prioridade { get; set; } 
+        private int idade;
+        public int Idade
+        {
+            get { return idade; }
+            set
+            {
+
+                if (value > 0)
+                {
+                    idade = value;
+                }
+                else
+                {
+                    idade = 0;
+                }
+
+            }
+        }
+        public bool Prioridade { get; set; }
+        
        
 
 
         public void Cadastrar()
         {
+            string prioritario;
             Console.WriteLine("Digite o nome");
             Nome = Console.ReadLine();
             Nome = Nome.ToUpper();
             Console.WriteLine("Digite sua idade");
             Idade = int.Parse(Console.ReadLine());
+            Console.WriteLine("Prioritário[s/n]");
+            prioritario = Console.ReadLine();
+            prioritario = prioritario.ToUpper();
+            Console.Clear();
 
-            if (Idade >= 60)
+            if (prioritario == "S" || Idade >= 60)
             {
                 Prioridade = true;
-            } else {
+            }
+            else
+            {
                 Prioridade = false;
             }
+
+            
+
+    
 
         }
 

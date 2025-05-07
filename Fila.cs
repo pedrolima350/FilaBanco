@@ -11,71 +11,92 @@ namespace FilaBanco
     {
         public Cliente[] fila = new Cliente[10];
         public int qtd = 0;
-
+        public int qtdProprietario;
 
         public void Atender()
         {
-            Cliente atendido = fila[0];
-            Console.WriteLine("Atendendo: {0}", atendido.Nome);
-
-            for (int i = 0; i < qtd - 1; i++)
+            
+            Console.Clear();
+            if (qtd < 1)
             {
-                fila[i] = fila[i + 1];
+                Console.WriteLine("\nNão há ninguém para Atender");
             }
+            else
+            {
+                Cliente atendido = fila[0];
+                Console.WriteLine("Atendendo: {0}", atendido.Nome);
 
-            fila[qtd - 1] = null;
-            qtd--;
+                for (int i = 0; i < qtd - 1; i++)
+                {
+                    fila[i] = fila[i + 1];
+                }
+
+                fila[qtd + 1] = null;
+                qtd--;
+            }
         }
 
 
         public void adicionarFila()
         {
-
+            if (qtd >= 10)
+            {
+                Console.WriteLine("Fila Cheia");
+            }
+            else
+            {
                 Cliente paciente = new Cliente();
                 paciente.Cadastrar();
 
-                if(paciente.Prioridade) {
+                if (paciente.Prioridade)
+                {
+                    qtdProprietario++;
                     for (int i = qtd; i > 0; i--)
                     {
+                        
                         fila[i] = fila[i - 1];
+                        
                     }
                     fila[0] = paciente;
                     Console.WriteLine("Cadastrado como Prioridade");
+                    
+                    
 
-                } else {
+                }
+                else
+                {
 
                     fila[qtd] = paciente;
                     Console.WriteLine("Cadastrado");
                 }
 
                 qtd++;
+            }
             
         }
 
         public void Listar()
         {
-            Console.WriteLine("\nFILA DE ATENDIMENTO:");
-            for (int i = 0; i < qtd; i++)
+            
+            if (fila[0] == null)
             {
-                Cliente pacienteAtual = fila[i];
-
-                if(pacienteAtual.Idade >= 60)
+                Console.WriteLine("Fila Vazia");
+            } else {
+                for (int i = 0; i < qtd; i++)
                 {
-                    pacienteAtual.Prioridade = true;
-                }
-                else
-                {
-                    pacienteAtual.Prioridade = false;
-                }
-                if(pacienteAtual.Prioridade)
-                {
-                    Console.WriteLine("{0}, {1} | Prioritário: Sim", pacienteAtual.Nome, pacienteAtual.Idade);
-                } else
-                {
-                    Console.WriteLine("{0}, {1} | Prioritário: Não", pacienteAtual.Nome, pacienteAtual.Idade);
-                }
+                    Cliente pacienteAtual = fila[i];
 
 
+                    if (pacienteAtual.Prioridade)
+                    {
+                        Console.WriteLine("{0}. {1}, {2} | Prioritário: Sim", i+1, pacienteAtual.Nome, pacienteAtual.Idade);
+                    }
+                    else
+                    {
+                        Console.WriteLine("{0}. {1}, {2} | Prioritário: Não", i+1, pacienteAtual.Nome, pacienteAtual.Idade);
+                    }
+
+                }
                     
             }
 

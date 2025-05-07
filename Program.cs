@@ -19,8 +19,8 @@ namespace FilaBanco
 
             do {
                 
-
-                Console.WriteLine("\n==========FILA=========");
+                
+                Console.WriteLine("\n==========BANCO=========");
                 fila.Listar();
                 Console.WriteLine("\n");
                 Console.WriteLine("[a] Atender próximo Cliente");
@@ -36,7 +36,11 @@ namespace FilaBanco
                         fila.Atender();
                         break;
                     case "L":
+                        Console.Clear();
+                        Console.WriteLine("\nFILA DE ATENDIMENTO:");
                         fila.Listar();
+                        Console.WriteLine("Digite para qualquer tecla para avançar");
+                        Console.ReadKey();
                         break;
                     case "C":
                        fila.adicionarFila();
