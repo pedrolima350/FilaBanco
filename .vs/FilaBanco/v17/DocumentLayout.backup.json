@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Tecnico\\Desktop\\FilaBanco\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{821906FF-6EE0-4E1A-BD22-FCC0A666B0B8}|FilaBanco.csproj|C:\\Users\\Tecnico\\Desktop\\FilaBanco\\fila.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{821906FF-6EE0-4E1A-BD22-FCC0A666B0B8}|FilaBanco.csproj|c:\\users\\tecnico\\desktop\\filabanco\\fila.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{821906FF-6EE0-4E1A-BD22-FCC0A666B0B8}|FilaBanco.csproj|solutionrelative:fila.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{821906FF-6EE0-4E1A-BD22-FCC0A666B0B8}|FilaBanco.csproj|solutionrelative:cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{821906FF-6EE0-4E1A-BD22-FCC0A666B0B8}|FilaBanco.csproj|c:\\users\\tecnico\\desktop\\filabanco\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{821906FF-6EE0-4E1A-BD22-FCC0A666B0B8}|FilaBanco.csproj|C:\\Users\\Tecnico\\Desktop\\FilaBanco\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{821906FF-6EE0-4E1A-BD22-FCC0A666B0B8}|FilaBanco.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "Fila.cs",
               "ToolTip": "C:\\Users\\Tecnico\\Desktop\\FilaBanco\\Fila.cs",
               "RelativeToolTip": "Fila.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAIAwwDQAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAD4v0IAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-22T22:54:01.639Z",
               "EditorCaption": ""
@@ -47,8 +47,7 @@
               "RelativeToolTip": "Cliente.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwCAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T22:53:25.657Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T22:53:25.657Z"
             },
             {
               "$type": "Document",
@@ -60,8 +59,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwCAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T22:52:00.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T22:52:00.196Z"
             }
           ]
         }

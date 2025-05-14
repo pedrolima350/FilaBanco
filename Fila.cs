@@ -11,7 +11,7 @@ namespace FilaBanco
     {
         public Cliente[] fila = new Cliente[10];
         public int qtd = 0;
-        public int qtdProprietario;
+        public int qtdPrioritario;
 
         public void Atender()
         {
@@ -50,14 +50,35 @@ namespace FilaBanco
 
                 if (paciente.Prioridade)
                 {
-                    qtdProprietario++;
-                    for (int i = qtd; i > 0; i--)
+                    qtdPrioritario++;
+                    if(qtdPrioritario > 1)
                     {
+                        for (int i = qtd; i > 0; i--)
+                        {
+                            fila[i] = fila[i - 1];
+
+                        }
+                        fila[0] = paciente;
+
+                        Cliente aux = fila[0];
+                        fila[0] = fila[1];
+                        fila[1] = aux;
                         
-                        fila[i] = fila[i - 1];
-                        
+
                     }
-                    fila[0] = paciente;
+                    else
+                    {
+                        for (int i = qtd; i > 0; i--)
+                        {
+                            fila[i] = fila[i - 1];
+
+                        }
+                        fila[0] = paciente;
+                    }
+
+                    
+                    
+                    
                     Console.WriteLine("Cadastrado como Prioridade");
                     
                     
